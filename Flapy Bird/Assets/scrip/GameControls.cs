@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-public class controls : MonoBehaviour
+public class GamesControls : MonoBehaviour
 {
-    public static controls instance;
+    public static GamesControls instance;
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollspeed = -1.5f;
 
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI Continue;
@@ -22,16 +23,20 @@ public class controls : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+    }
         // Update is called once per frame
         void Update()
         {
-
+         if (gameOver == true && Input.GetMouseButton (0))
+         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+         }
         }
-        public void BirdDie()
+
+        public void BirdDied()
         {
             gameOverText.SetActive(true);
             gameOver = true;
         }
-    }
+    
 }
