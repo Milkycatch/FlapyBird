@@ -28,12 +28,10 @@ public class controls : MonoBehaviour
         {
 
         }
-
-        public void BirdDied()
+        public void BirdDie()
         {
             gameOverText.SetActive(true);
             gameOver = true;
         }
     }
 }
-
