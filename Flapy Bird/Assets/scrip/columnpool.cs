@@ -7,7 +7,7 @@ public class columnpool : MonoBehaviour
     private GameObject[] columns;
     private Vector2 objectPoolPosition = new Vector2(34.5f,0.4f);
     private float timeSiceLastSpawned;
-    private float spawnXPosition = 5.1f;
+    private float spawnXPosition = 1f;
     private int currentColumn = 0;
 
     public int columnsPoolSize = 5; 
