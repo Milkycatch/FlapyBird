@@ -5,14 +5,16 @@ using UnityEngine;
 public class columnpool : MonoBehaviour
 {
     private GameObject[] columns;
-    private Vector2 objectPoolPosition = new Vector2(-15f,-20f);
+    private Vector2 objectPoolPosition = new Vector2(34.5f,0.4f);
     private float timeSiceLastSpawned;
+    private float spawnXPosition = 5.1f;
+    private int currentColumn = 0;
 
     public int columnsPoolSize = 5; 
     public GameObject columnPrefab;
-    public float spawnRate = 4;
-    public float columnsMin = -1f;
-    public float columnsmmMax =3.5f;
+    public float spawnRate = 1;
+    public float columnsMin = 0.4f;
+    public float columnsmmMax =34.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +29,17 @@ public class columnpool : MonoBehaviour
     void Update()
     {
         timeSiceLastSpawned = Time.deltaTime;
-        if (GamesControls.instance.gameOver == false && timeSiceLastSpawned >= spawnRate) ;
+
+        if (GamesControls.instance.gameOver == false && timeSiceLastSpawned >= spawnRate) 
         {
             timeSiceLastSpawned = 0;
-            float spawnYPosition Random.Range (columnsMin, columnsmmMax);
-        } 
+            float spawnYPosition  = Random.Range (columnsMin, columnsmmMax); 
+            columns[currentColumn].transform.position = new Vector2 (spawnXPosition, spawnYPosition);
+            currentColumn++;
+            if (currentColumn >= columnsPoolSize);
+            {
+                currentColumn = 0;
+            }
+        }
     }
 }
