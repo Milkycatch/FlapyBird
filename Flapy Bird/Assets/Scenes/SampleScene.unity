@@ -834,12 +834,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ca2df766610b3b459678de6a68c29ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverText: {fileID: 949181382}
+  gameOverText: {fileID: 0}
   scoreText: {fileID: 0}
   gameOver: 0
   scrollspeed: -1.5
-  ScoreText: {fileID: 1630195811}
-  Continue: {fileID: 342822673}
+  ScoreText: {fileID: 0}
+  Continue: {fileID: 0}
 --- !u!4 &826801638
 Transform:
   m_ObjectHideFlags: 0
@@ -1590,17 +1590,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6531518817054151895, guid: 3381d996683fd2846b78d1a293c7e3a2, type: 3}
   m_PrefabInstance: {fileID: 570416698142939153}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1630195811 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4587740754862308006, guid: 3381d996683fd2846b78d1a293c7e3a2, type: 3}
-  m_PrefabInstance: {fileID: 570416698142939153}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2078676813
 GameObject:
   m_ObjectHideFlags: 0

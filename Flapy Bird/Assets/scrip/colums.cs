@@ -6,9 +6,9 @@ public class colums : MonoBehaviour
 {
     private void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.GetComponent<bird>() != null)
+        if (other.GetComponent<Bird>() != null)
         {
-           GamesControls.instance.BirdScore();
+           GamesControls.instance.BirdScored ();
         }
     }
    

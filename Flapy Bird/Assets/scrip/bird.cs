@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bird : MonoBehaviour
+public class Bird : MonoBehaviour
 {
     public float upForce = 200f;
 

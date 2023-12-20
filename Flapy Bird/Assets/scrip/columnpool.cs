@@ -13,9 +13,9 @@ public class columnpool : MonoBehaviour
 
     public int columnsPoolSize = 5; 
     public GameObject columnPrefab;
-    public float spawnRate = 5;
-    public float columnsMin = 0.4f;
-    public float columnsmmMax =10f;
+    public float spawnRate = 5f;
+    public float columnsMin = -1f;
+    public float columnsmmMax =3.5f;
     // Start is called before the first frame update
     void Start()
     {

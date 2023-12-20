@@ -36,7 +36,7 @@ public class GamesControls : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
          }
         }
-    public void BirdScore()
+    public void BirdScored()
     {
         if (gameOver)
         {
