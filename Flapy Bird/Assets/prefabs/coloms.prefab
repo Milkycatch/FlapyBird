@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3408877944751327889}
   - component: {fileID: 2910675216552860079}
   - component: {fileID: 5397990503675463052}
-  - component: {fileID: -415078183357595339}
   m_Layer: 0
   m_Name: coloms
   m_TagString: Untagged
@@ -134,23 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6340b6f25b49414fa950d953894e480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-415078183357595339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379278368928481372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e51879ae658152446bfe17c4707ac86a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  columnsPoolSize: 5
-  columnPrefab: {fileID: 6379278368928481372}
-  spawnRate: 1
-  columnsMin: 0.4
-  columnsmmMax: 34.5
 --- !u!1 &6738142930508700206
 GameObject:
   m_ObjectHideFlags: 0

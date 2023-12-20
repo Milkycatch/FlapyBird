@@ -5,16 +5,17 @@ using UnityEngine;
 public class columnpool : MonoBehaviour
 {
     private GameObject[] columns;
-    private Vector2 objectPoolPosition = new Vector2(34.5f,0.4f);
+    private Vector2 objectPoolPosition = new Vector2(10f,0.4f);
     private float timeSiceLastSpawned;
+    private float spawnYPosition = 5f;
     private float spawnXPosition = 10f;
     private int currentColumn = 0;
 
     public int columnsPoolSize = 5; 
     public GameObject columnPrefab;
-    public float spawnRate = 1;
+    public float spawnRate = 5;
     public float columnsMin = 0.4f;
-    public float columnsmmMax =34.5f;
+    public float columnsmmMax =10f;
     // Start is called before the first frame update
     void Start()
     {
